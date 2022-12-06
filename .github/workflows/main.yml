@@ -1,0 +1,12 @@
+name: DockerTest
+on:
+  push:
+    branches: [ main ]
+jobs:
+  container-test-job:
+    runs-on: ubuntu-latest
+    container:
+      image: burakakdoganfortify1:dotnet
+    steps:
+      - name: sourceanalyzer 
+        run: /opt/Fortify/Fortify_SCA_and_Apps_22.1.1/bin/sourceanalyzer
