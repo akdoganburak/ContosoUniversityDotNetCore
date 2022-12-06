@@ -1,7 +1,7 @@
 name: DockerTest
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 jobs:
   container-test-job:
     runs-on: Centos7
