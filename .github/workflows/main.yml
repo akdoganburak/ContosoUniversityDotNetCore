@@ -4,7 +4,7 @@ on:
     branches: [ master ]
 jobs:
   container-test-job:
-    runs-on: Centos7
+    runs-on: ubuntu-latest
     container:
       image: burakakdoganfortify1:dotnet
     steps:
